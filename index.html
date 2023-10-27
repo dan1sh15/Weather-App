@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
     <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
 </head>
 <body>
@@ -39,8 +39,30 @@
             </form>
 
             <div class="sub-container loading-container">
-                <img src="./images/loading.gif" height="150" width="150" alt="">
-                <p>Loading</p>
+                <div class='loader-container'>
+                    <div class='loader class1'>
+            
+                    </div>
+                    <div class='loader class2 '>
+                        <p class=' '></p>
+                        <div></div>
+                    </div>
+                    <p class='loader class3 '></p>
+        
+                    <div class='class4'>
+                        <div class='loader cards '>
+                            
+                        </div>
+                        <div class='loader cards  '>
+                            
+                        </div>
+                        <div class='loader cards  '>
+                            
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
 
             <div class="sub-container user-info-container">
@@ -52,8 +74,10 @@
                 </div>
 
                 <!-- weather description -->
-                <p class="capitalise" data-weatherDescription></p>
-                <img data-weatherIcon>
+                <div class="flex">
+                    <p class="capitalise" data-weatherDescription></p>
+                    <img data-weatherIcon>
+                </div>
                 <p class="bigger" data-temp></p>
                 
 
@@ -88,7 +112,7 @@
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/e72a8a01fb.js" crossorigin="anonymous"></script>
 </body>
 </html>
